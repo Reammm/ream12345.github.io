@@ -36,9 +36,9 @@
  -webkit-transform:translateY(-100%);	
  transform:translateY(-100%);
  /* Apply animation to this element */	
- -moz-animation: example3 4 linear infinite;
- -webkit-animation: example3 4 linear infinite;
- animation: example3 4s linear infinite;
+ -moz-animation: example3 2 linear infinite;
+ -webkit-animation: example3 2 linear infinite;
+ animation: example3 2s linear infinite;
 }
 /* Move it (define the animation) */
 @-moz-keyframes example3 {
@@ -66,23 +66,100 @@
 <!-- HTML -->
 <DIV style="position: absolute; top:600px; left:700px; width:300px; height:300px">
 <div class="example3">
-<h3> /id/; /id/</h3> 
+<h3> /id/ </h3> 
 </div>
     
 
 
 </DIV>
 
-<style type="text/css"> 
-#mydiv {
-    position:absolute;
-    top: 50%;
-    left: 46%;
+
+<div style="background-color: transparent; top: 0px; left: 0px; position: absolute; width: 600px; height: 400px; z-index:9999"></div>
+<div style="background-color: transparent; position: absolute; z-index:9">
+<center><span class="text text-bg"></span><span class="text" style="background-color:rgba(33, 33, 33, 0.9); pointer-events:none;"></span></center>
+</div>
+</div>
+<center><span style="position: absolute; top: 95%; left: 35%; width: 30%; color: #BEBEBE; font-size: 13px;"><marquee behavior="scroll" scrollamount="6" direction="left"><span style="opacity: 0">SPACING asd</span>REVERT TO PRE SEASON 3 PLEASE</marquee></span></center>
+ 
+ 
+
+<script>
+
+"use strict";
+function _classCallCheck(a, b) {
+    if (!(a instanceof b)) throw new TypeError("Cannot call a class as a function")
 }
+var TextScramble = function() {
+        function a(b) {
+            _classCallCheck(this, a), this.el = b, this.chars = "!<>-_\\/[]{}$#________$$$$", this.update = this.update.bind(this)
+        }
+        return a.prototype.setText = function(b) {
+            var c = this,
+                d = this.el.innerText,
+                e = Math.max(d.length, b.length),
+                f = new Promise(function(a) {
+                    return c.resolve = a
+                });
+            this.queue = [];
+            for (var g = 0; g < e; g++) {
+                var h = d[g] || "",
+                    i = b[g] || "",
+                    j = Math.floor(70 * Math.random()),
+                    k = j + Math.floor(60 * Math.random());
+                this.queue.push({
+                    from: h,
+                    to: i,
+                    start: j,
+                    end: k
+                })
+            }
+            return cancelAnimationFrame(this.frameRequest), this.frame = 0, this.update(), f
+        }, a.prototype.update = function() {
+            for (var b = "", c = 0, d = 0, e = this.queue.length; d < e; d++) {
+                var f = this.queue[d],
+                    g = f.from,
+                    h = f.to,
+                    i = f.start,
+                    j = f.end,
+                    k = f.char;
+                this.frame >= j ? (c++, b += h) : this.frame >= i ? ((!k || Math.random() < .18) && (k = this.randomChar(), this.queue[d].char = k), b += '<span class="dud">' + k + "</span>") : b += g
+            }
+            this.el.innerHTML = b, c === this.queue.length ? this.resolve() : (this.frameRequest = requestAnimationFrame(this.update), this.frame++)
+        }, a.prototype.randomChar = function() {
+            return this.chars[Math.floor(Math.random() * this.chars.length)]
+        }, a
+    }(),
+    phrases = ["Ream"],
+    el = document.querySelectorAll(".text")[1],
+    fx = new TextScramble(el),
+    counter = 0,
+    next = function a() {
+        counter < 10 && fx.setText(phrases[counter]).then(function() {
+            setTimeout(a, 700)
+        })
+    };
+next();
 
-</style>
-
-
-<div id="mydiv">Ream</div>
-
+</script>
+<script>
+    setInterval(function(){
+        a = document.querySelectorAll(".text")[1].innerHTML
+        a = a.split('<span class="dud">').join('').split('</span>').join('').split('&lt').join('').split('&gt').join('')
+        document.title = a
+    }, 10);
+   
+</script>
+ 
+<script>
+function hidePreloader() {
+    var preloader = $('.spinner-wrapper');
+    preloader.fadeOut(500);
+}
+ 
+setTimeout(
+    function(){
+        hidePreloader();
+    },
+1000);
+</script>
 </html>
