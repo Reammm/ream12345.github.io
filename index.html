@@ -1,3 +1,4 @@
+
 <html>
 
   
@@ -14,60 +15,74 @@
  
 
     </body>
-<DIV style="position: absolute; top:375px; left:575px; width:300px; height:75px">
-<marquee bgcolor="transparent" width="20" height="100" direction="up" style="color:#fff" >
+<title>Example</title>
+
+<!-- Styles -->	
+<style style="text/css">
+.example3 {
+ height: 200px;	
+ overflow: hidden;
+ position: relative;
+}
+.example3 h3 {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateY(-100%);
+ -webkit-transform:translateY(-100%);	
+ transform:translateY(-100%);
+ /* Apply animation to this element */	
+ -moz-animation: example3 4 linear infinite;
+ -webkit-animation: example3 4 linear infinite;
+ animation: example3 4s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes example3 {
+ 0%   { -moz-transform: translateY(-50%); }
+ 100% { -moz-transform: translateY(50%); }
+}
+@-webkit-keyframes example3 {
+ 0%   { -webkit-transform: translateY(-100%); }
+ 100% { -webkit-transform: translateY(100%); }
+}
+@keyframes example3 {
+ 0%   { 
+ -moz-transform: translateY(-100%); /* Firefox bug fix */
+ -webkit-transform: translateY(-100%); /* Firefox bug fix */
+ transform: translateY(-100%); 		
+ }
+ 100% { 
+ -moz-transform: translateY(100%); /* Firefox bug fix */
+ -webkit-transform: translateY(100%); /* Firefox bug fix */
+ transform: translateY(100%); 
+ }
+}
+</style>
+
+<!-- HTML -->
+<DIV style="position: absolute; top:600px; left:700px; width:300px; height:300px">
+<div class="example3">
+<h3> /id/; /id/</h3> 
+</div>
     
-    /id/ &nbsp;
-    /id/ &nbsp;
-    /id/ &nbsp;
-    /id/ &nbsp;
-	/id/ &nbsp;
-	/id/ &nbsp;
-	/id/ &nbsp;
-	/id/ &nbsp;
-	/id/ &nbsp;
-	/id/ &nbsp;
-	/id/ &nbsp;
-	/id/ &nbsp;
-	/id/ &nbsp;
-	/id/ &nbsp;
-	/id/ &nbsp;
-	/id/ &nbsp;
-	/id/ &nbsp;
-	/id/ &nbsp;
-	/id/ &nbsp;
-	/id/ &nbsp;
-	/id/ &nbsp;
-	/id/ &nbsp;
-	/id/ &nbsp;
-	/id/ &nbsp;
-	/id/ &nbsp;
-	/id/ &nbsp;
-    /id/ &nbsp;
-    /id/ &nbsp;
-    /id/ &nbsp;
-	/id/ &nbsp;
-	/id/ &nbsp;
-	/id/ &nbsp;
-	/id/ &nbsp;
-	/id/ &nbsp;
-	/id/ &nbsp;
-	/id/ &nbsp;
-	/id/ &nbsp;
-	/id/ &nbsp;
-	/id/ &nbsp;
-	/id/ &nbsp;
-	/id/ &nbsp;
-	/id/ &nbsp;
-	/id/ &nbsp;
-	/id/ &nbsp;
-	/id/ &nbsp;
-	/id/ &nbsp;
-	/id/ &nbsp;
-	/id/ &nbsp;
-	/id/ &nbsp;
-	/id/ &nbsp;
-	
-</marquee>    
+
+
 </DIV>
+
+<style type="text/css"> 
+#mydiv {
+    position:absolute;
+    top: 50%;
+    left: 46%;
+}
+
+</style>
+
+
+<div id="mydiv">Ream</div>
+
 </html>
