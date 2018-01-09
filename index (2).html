@@ -73,7 +73,24 @@
 
 </DIV>
 
-
+<script src="jquery.js"></script>
+<script src="jquery.marquee.min.js"></script>
+<link rel="stylesheet" type="text/css" href="lel.css">
+<link rel="stylesheet" type="text/css" href="spinkit.css">
+<style>@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';html,body{font-family:'Roboto Mono',monospace;background:#212121;height:100%;margin:0;}.container{height:100%;width:100%;justify-content:center;align-items:center;display:flex;}.text{font-weight:100;font-size:72px;color:#fafafa;}.dud{color:#757575;}.text-bg{-webkit-filter:blur(20px);-o-filter:blur(20px);filter:blur(20px);}</style>
+</head>
+<body>
+<div class="spinner-wrapper" id="spinner-wrapper">
+<div class="spinner"></div>
+</div>
+<div class="container">
+	<video autoplay loop id="player">
+		<source src="bg.mp4" type="video/mp4" />
+		<script>
+		var video = document.currentScript.parentElement;
+		video.volume = 0.8;
+		</script>
+		</video>
 <div style="background-color: transparent; top: 0px; left: 0px; position: absolute; width: 600px; height: 400px; z-index:9999"></div>
 <div style="background-color: transparent; position: absolute; z-index:9">
 <center><span class="text text-bg"></span><span class="text" style="background-color:rgba(33, 33, 33, 0.9); pointer-events:none;"></span></center>
