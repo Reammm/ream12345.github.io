@@ -28,89 +28,12 @@
   </style>
   
 
-  <center><div id="clockDisplay" class="clockStyle"></div></center>
-  <script>
-   function renderTime() {
-   var currentTime = new Date();
-   var diem = "am";
-   var h = currentTime.getHours();
-   var m = currentTime.getMinutes();
-   var s = currentTime.getSeconds();
-   setTimeout('renderTime()',1000);
-   if (h == 0) {
-    h = 12;
-   } else if (h > 12) { 
-    h = h - 12;
-    diem="pm";
-   }
-   if (h < 10) {
-    h = "0" + h;
-   }
-   if (m < 10) {
-    m = "0" + m;
-   }
-   if (s < 10) {
-    s = "0" + s;
-   }
-   var myClock = document.getElementById('clockDisplay');
-   myClock.textContent = h + ":" + m + ":" + s + " " + diem;
-   myClock.innerText = h + ":" + m + ":" + s + " " + diem;
-   }
-   renderTime();
-  </script>
 
 <!-- Styles -->	
-<style style="text/css">
-.example3 {
- height: 200px;	
- overflow: hidden;
- position: relative;
-}
-.example3 h3 {
- position: absolute;
- width: 100%;
- height: 100%;
- margin: 0;
- line-height: 50px;
- text-align: center;
- /* Starting position */
- -moz-transform:translateY(-100%);
- -webkit-transform:translateY(-100%);	
- transform:translateY(-100%);
- /* Apply animation to this element */	
- -moz-animation: example3 2 linear infinite;
- -webkit-animation: example3 2 linear infinite;
- animation: example3 2s linear infinite;
-}
-/* Move it (define the animation) */
-@-moz-keyframes example3 {
- 0%   { -moz-transform: translateY(-50%); }
- 100% { -moz-transform: translateY(50%); }
-}
-@-webkit-keyframes example3 {
- 0%   { -webkit-transform: translateY(-100%); }
- 100% { -webkit-transform: translateY(100%); }
-}
-@keyframes example3 {
- 0%   { 
- -moz-transform: translateY(-100%); /* Firefox bug fix */
- -webkit-transform: translateY(-100%); /* Firefox bug fix */
- transform: translateY(-100%); 		
- }
- 100% { 
- -moz-transform: translateY(100%); /* Firefox bug fix */
- -webkit-transform: translateY(100%); /* Firefox bug fix */
- transform: translateY(100%); 
- }
-}
-</style>
+<
 
 <!-- HTML -->
-<div class="example3">
-<DIV style="position: absolute; top:600px; left:700px; width:300px; height:300px">
-<h3> /id/ <br> /id/ <br> /id/ <br> /id/ <br> /id/  </h3> 
-</DIV>
-</div>
+
 
 <script src="jquery.js"></script>
 <script src="jquery.marquee.min.js"></script>
@@ -119,12 +42,10 @@
 <style>@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';html,body{font-family:'Roboto Mono',monospace;background:#212121;height:100%;margin:0;}.container{height:100%;width:100%;justify-content:center;align-items:center;display:flex;}.text{font-weight:100;font-size:72px;color:#fafafa;}.dud{color:#757575;}.text-bg{-webkit-filter:blur(20px);-o-filter:blur(20px);filter:blur(20px);}</style>
 </head>
 
-<div class="spinner-wrapper" id="spinner-wrapper">
-<div class="spinner"></div>
-</div>
+<div
 <div class="container">
 	<video autoplay loop id="player">
-		<source src="flex.mp4" type="video/mp4" />
+		<source src="lil.mp4" type="video/mp4" />
 		<script>
 		var video = document.currentScript.parentElement;
 		video.volume = 0.5;
@@ -137,7 +58,7 @@
 </div>
 </div>
 
- <div><center><span style="position: absolute; top: 95%; left: 35%; width: 30%; color: #FFFFFF; font-size: 13px;"><marquee behavior="scroll" scrollamount="6" direction="left"></span><marquee><font><a href="steamcommunity.com/id/analyse"target="_blank">Winter</a>&nbsp; / &nbsp;<a href="steamcommunity.com/id/-eav/" target="_blank">Eavv</a>&nbsp; / &nbsp;<a href="steamcommunity.com/id/aprilbtw/" target="_blank">April</a>&nbsp; /&nbsp; <a href="steamcommunity.com/id/-hking" target="_blank">Hking</a>&nbsp; / &nbsp;<a href="steamcommunity.com/id/radarfps/" target="_blank">Radar</a></marquee></font></center></div>
+ 
  
 <script>
 
@@ -201,14 +122,7 @@ next();
 <script src="jquery.js"></script>
 <script src="jquery.marquee.min.js"></script>
 <link rel="stylesheet" type="text/css" href="spinkit.css">
-<script>
-    setInterval(function(){
-        a = document.querySelectorAll(".text")[1].innerHTML
-        a = a.split('<span class="dud">').join('').split('</span>').join('').split('&lt').join('').split('&gt').join('')
-        document.title = a
-    }, 10);
-   
-</script>
+
  
 <script>
 function hidePreloader() {
@@ -223,28 +137,7 @@ setTimeout(
 1000);
 </script>
 
-<script>
- plinks = [{
-		name: 'Winter',
-        plink: 'http://steamcommunity.com/id/analyse/'
-    }, {
-        name: 'Eavv',
-        plink: 'https://steamcommunity.com/id/-eav/"'
-    }, {
-		name: 'April',
-		plink: 'http://steamcommunity.com/id/aprilbtw/'
-	}, {
-		name: 'Hking',
-		plink: 'https://steamcommunity.com/profiles/76561198329575788'
-    }, {
-		name: 'Euan',
-		plink: 'http://steamcommunity.com/id/euanbtw/'
-		 }, ];
-    
-    })
-});
 
-</script>
 
 </body>
 
