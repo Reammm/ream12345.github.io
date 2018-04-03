@@ -1,24 +1,28 @@
 $(document).ready(function() {
     var plinks = [
        	       	{
-            name: 'motion',
-            plink: 'http://steamcommunity.com/profiles/76561198094225861'
+            name: 'winter',
+            plink: 'http://steamcommunity.com/id/analyse'
         },
 		{
-            name: 'quake',
-            plink: 'http://steamcommunity.com/profiles/76561198111823010'
+            name: 'medusa',
+            plink: 'http://steamcommunity.com/id/-pd'
        },       
 	   {
-            name: 'mystie',
-            plink: 'http://steamcommunity.com/profiles/76561198115007530'
+            name: 'temp',
+            plink: 'http://steamcommunity.com/id/g8m8outof8'
+        },
+	   {
+            name: 'radar',
+            plink: 'http://steamcommunity.com/id/radarfps'
         },
 		{
-            name: 'ksiaze',
-            plink: 'http://steamcommunity.com/profiles/76561198139369327'
+            name: 'euan',
+            plink: 'http://steamcommunity.com/id/euanbtw'
 		},
         {
-            name: 'valentina',
-            plink: 'http://steamcommunity.com/profiles/76561198238193390'
+            name: 'crexd',
+            plink: 'http://steamcommunity.com/id/crexd'
 
         },
 		];    
