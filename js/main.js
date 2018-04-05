@@ -31,18 +31,23 @@ $(document).ready(function() {
 
         },
 		{
-            name: 'POG',
+            name: 'pog',
             plink: 'http://steamcommunity.com/profiles/76561198202121524'
 
         },
 		{
-            name: 'Azurii',
+            name: 'azurii',
             plink: 'http://steamcommunity.com/profiles/76561198254958160'
 
         },
 		{
-            name: 'Waffles',
+            name: 'waffles',
             plink: 'http://steamcommunity.com/profiles/76561198069161658'
+
+        },
+		{
+            name: 'crexd',
+            plink: 'http://steamcommunity.com/id/crexd'
 
         },
 		
