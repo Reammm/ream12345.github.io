@@ -21,10 +21,31 @@ $(document).ready(function() {
             plink: 'http://steamcommunity.com/id/euanbtw'
 		},
         {
-            name: 'crexd',
-            plink: 'http://steamcommunity.com/id/crexd'
+            name: 'yash',
+            plink: 'http://steamcommunity.com/profiles/76561198170393858'
 
         },
+		{
+            name: 'mantele',
+            plink: 'http://steamcommunity.com/id/mantele22'
+
+        },
+		{
+            name: 'POG',
+            plink: 'http://steamcommunity.com/profiles/76561198202121524'
+
+        },
+		{
+            name: 'Azurii',
+            plink: 'http://steamcommunity.com/profiles/76561198254958160'
+
+        },
+		{
+            name: 'Waffles',
+            plink: 'http://steamcommunity.com/profiles/76561198069161658'
+
+        },
+		
 		];    
 	
     for (var i in plinks) {
