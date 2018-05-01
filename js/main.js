@@ -36,11 +36,6 @@ $(document).ready(function() {
 
         },
 		{
-            name: 'azurii',
-            plink: 'http://steamcommunity.com/profiles/76561198254958160'
-
-        },
-		{
             name: 'waffles',
             plink: 'http://steamcommunity.com/profiles/76561198069161658'
 
