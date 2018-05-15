@@ -16,35 +16,6 @@ $(document).ready(function() {
             name: 'radar',
             plink: 'http://steamcommunity.com/id/radarfps'
         },
-		{
-            name: 'euan',
-            plink: 'http://steamcommunity.com/id/euanbtw'
-		},
-        {
-            name: 'yash',
-            plink: 'http://steamcommunity.com/profiles/76561198170393858'
-
-        },
-		{
-            name: 'mantele',
-            plink: 'http://steamcommunity.com/id/mantele22'
-
-        },
-		{
-            name: 'pog',
-            plink: 'http://steamcommunity.com/profiles/76561198202121524'
-
-        },
-		{
-            name: 'waffles',
-            plink: 'http://steamcommunity.com/profiles/76561198069161658'
-
-        },
-		{
-            name: 'crexd',
-            plink: 'http://steamcommunity.com/id/crexd'
-
-        },
 		
 		];    
 	
