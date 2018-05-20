@@ -16,6 +16,10 @@ $(document).ready(function() {
             name: 'radar',
             plink: 'http://steamcommunity.com/id/radarfps'
         },
+		{
+            name: 'crexd',
+            plink: 'https://steamcommunity.com/id/Crexd/'
+        },
 		
 		];    
 	
